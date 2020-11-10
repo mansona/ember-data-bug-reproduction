@@ -1,0 +1,9 @@
+<h1>{{@model.title}}</h1>
+
+All {{@model.title}} posts:
+
+<ul>
+  {{#each @model.posts as |post|}}
+    <li><LinkTo @route="post" @model={{post}}>{{post.title}}</LinkTo></li>
+  {{/each}}
+</ul>
