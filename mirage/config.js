@@ -1,4 +1,5 @@
 export default function() {
+  this.logging = true;
   this.db.loadData({
     tags: [
       {
