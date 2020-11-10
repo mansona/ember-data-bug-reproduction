@@ -1,0 +1,5 @@
+<ul>
+  {{#each @model as |post|}}
+    <li><LinkTo @route="post" @model={{post}}>{{post.title}}</LinkTo></li>
+  {{/each}}
+</ul>
